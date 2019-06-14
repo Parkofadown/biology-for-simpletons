@@ -1,0 +1,62 @@
+{% extends "index.html"%}
+
+{% block index %}
+
+        <body>
+	<!-- Image and text -->
+  	<!-- Navbar content -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  	    <a class="navbar-brand" href="{{ url_for('index')}}">
+            <img src="../static/dna.jpg" width = 70 height = 60 /></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+  	  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ url_for('index')}}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('references')}}">References</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('cells')}}">Cells and DNA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('mutations')}}">Mutations</a>
+        </li>
+      </ul>
+    </div>
+  	</nav>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">What is a cell? </h1>
+    <p class="lead">Cells are the basic building blocks of all living things. The human body is composed of trillions of cells. They provide structure for the body, take in nutrients from food, convert those nutrients into energy, and carry out specialized functions.</p>
+    <h1 class="display-4">What is DNA?</h1>
+    <p class="lead">DNA, or deoxyribonucleic acid, is the hereditary material in humans and almost all other organisms. Nearly every cell in the person's body has the same DNA. Most DNA is located in the cell nucleus, but a small amount can be found in the mitochondria.</p>
+    <h1 class="display-4">What is a gene?</h1>
+    <p class="lead">A gene is the basic physical and functional unit of hereditary. Genes are made up of DNA. Some genes act as instructions to make molecules called proteins. However, many genes do not make proteins. The human genome project estimated that humans have between 20,000 and 25,000 genes.</p>
+    <h1 class="display-4">What is a chromosome?</h1>
+    <p class="lead">In the nucleus of each cell, the DNA molecule is packaged into thread-like structures called chromosomes. Each chromosome is made up of DNA tightly coiled many times around proteins called histones that support its structure. Chromosomes are not visible in the cell's nucleus -- not even under a microscope when the cell is not dividing.</p>
+    <h1 class="display-4">How many chromosomes do people have?</h1>
+    <p class="lead">In humans, each cell normally contains 23 pairs of chromosomes, for a total of 46. Twenty-two of these pairs, called autosomes, look the same in both males and females. The 23rd pair, the sex chromosomes, differ between males and females. Females have two copies of the X chromosome, while males have one X and one Y chromosome.</p>
+    <h1 class="display-4">What is noncoding DNA?</h1>
+    <p class="lead">Only about 1 percent of DNA is made up of protein-coding genes; the other 99 percent is noncoding. Noncoding DNA does not provide instructions for making protein. Scientists once thought noncoding DNA as "junk", with no known purpose. However, it is becoming clear that at least some of it is integral to the function of cells, particulary the control of gene activity.</p>
+
+
+  </div>
+
+</div>
+
+</body>
+
+        <footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </footer>
+
+
+{% endblock %}
