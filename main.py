@@ -3,7 +3,7 @@ from flask import render_template
 app = Flask(__name__)
 
 
-@app.route('/index') # 127.0.0.1:5000
+@app.route('/') # 127.0.0.1:5000
 def index():
     return render_template('index.html')
 
